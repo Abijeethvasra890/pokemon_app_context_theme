@@ -1,0 +1,9 @@
+.home{
+    background-color: var(--background);
+    height: 100vh;
+    
+}
+
+.text{
+    color: var(--foreground)
+}

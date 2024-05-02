@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-fg);
+}
+
+.buttonsRight{
+    display: flex;
+}
+
+.title{
+    margin-left: 10px;
+    font-family: 'Segoe UI';
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
