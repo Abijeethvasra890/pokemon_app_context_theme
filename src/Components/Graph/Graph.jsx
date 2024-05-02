@@ -9,8 +9,8 @@ const Graph = ({ data }) => {
   // Extract labels and data values from the provided stats
   const labels = data.stats.map(item => item.stat.name);
   const values = data.stats.map(item => item.base_stat);
-    console.log(labels);
-    console.log(values);
+    //console.log(labels);
+   // console.log(values);
 
   // Define chart data
   const chartData = {

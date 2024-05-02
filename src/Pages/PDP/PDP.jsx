@@ -31,7 +31,7 @@ const PDP = () => {
     const fetchDataAsync = async () => {
       try {
         const fetchedData = await fetchData(apiURL);
-        console.log(fetchedData)
+        //console.log(fetchedData)
         setData(fetchedData);
       } catch (error) {
         console.log(error);
