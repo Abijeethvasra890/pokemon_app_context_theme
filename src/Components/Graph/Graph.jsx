@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Line, Pie } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import '../Graph/Graph.css'
 import ThemeContext from '@/context/ThemeContext';

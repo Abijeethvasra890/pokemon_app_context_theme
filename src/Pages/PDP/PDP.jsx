@@ -80,7 +80,7 @@ const PDP = () => {
               </TableRow>
             </TableBody>
           </Table>
-          <Graph data={pokemonData}/>
+          <Graph data={pokemonData} />
         </div>
       )}
     </div>
