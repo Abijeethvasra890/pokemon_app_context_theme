@@ -1,21 +1,4 @@
-.table-container {
-    border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
-  }
-  
-  .table-container td {
-    padding: 8px 100px;
-    border: 1px solid black;
-    text-align: center;
-  }
-  
-  .table-container ul li {
-    text-align: center;
-  }
-
-  .PDPtitle{
+.PDPtitle{
     background-color: var(--background);
     color: var(--foreground);
     display: flex;
@@ -30,5 +13,21 @@
 .pokemon-details{
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.detail-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-table{
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .detail-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
   

@@ -1,12 +1,11 @@
 import { useContext } from 'react';
 import themeContext from '../../context/ThemeContext'
 import "./Toggle.css";
+import AuthContext from '@/context/AuthContext';
 
 export const Toggle = () => {
-    const { darkMode, setdarkMode } = useContext(themeContext);
-    const handleToggle = () => {
-        setdarkMode(!darkMode); // Toggle darkMode value
-      };
+    const { darkMode, toggleDarkMode } = useContext(themeContext);
+
   return (
     <div className="toggle-container">
       <input
@@ -14,7 +13,7 @@ export const Toggle = () => {
         id="check"
         className="toggle"
         checked={darkMode}
-        onChange={handleToggle}
+        onChange={()=>toggleDarkMode()}
       />
       <label htmlFor="check"></label>
     </div>

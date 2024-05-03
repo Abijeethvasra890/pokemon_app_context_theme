@@ -48,9 +48,10 @@ const PDP = () => {
     <div className={`pdp-container ${darkMode ? 'dark' : ''}`}>
       {pokemonData && (
         <div className={`pokemon-details ${darkMode ? 'dark' : ''}`}>
-        <center><div className='PDPtitle'>Pokemon Details - {pokemonData.name}</div>
-          <img className='pokemon-img' src={imageURL} alt={pokemonData.name} /></center>
-          <Table>
+        <center><div className='PDPtitle'>Pokemon Details - {pokemonData.name}</div></center>
+        <div className='detail-container'>
+          <center><img className='pokemon-img' src={imageURL} alt={pokemonData.name} /></center>
+          <Table className='detail-table'>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-bold">Name:</TableCell>
@@ -80,6 +81,7 @@ const PDP = () => {
               </TableRow>
             </TableBody>
           </Table>
+        </div>
           <Graph data={pokemonData} />
         </div>
       )}
