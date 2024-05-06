@@ -9,7 +9,6 @@ const NameModal = () => {
 
     const handleSubmit = () => {
         login(name);
-        // Close the modal or navigate to another page
     };
 
     return (

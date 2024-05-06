@@ -27,7 +27,10 @@ const Navbar = () => {
                 <Link className = "nav-item nav-link" to="/pokemons"> 
                   <Button className="m-2">Pokemon List</Button>
                 </Link>
-                <Button onClick={logout} className="m-2">Logout</Button>
+                {isAuthenticated?
+                  <Button onClick={logout} className="m-2">Logout</Button>:""
+                }
+                
             </div>
            
           </div>
